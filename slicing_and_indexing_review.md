@@ -178,7 +178,7 @@ print(string[-3:-1])  # Output: ho   (Pyt  ho  n)
 
 string = "Python programming"
 # Get every 3rd character
-print(string[::3])  # Output: Ph oa
+print(string[::3])  # Output: Ph oai
 ```
 
 The blank space between "**Python**" and "**programming**" is counted as part of the index.
