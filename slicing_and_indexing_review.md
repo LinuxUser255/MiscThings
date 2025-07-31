@@ -279,15 +279,6 @@ print(string[-5:-15:-2]) # mropn
 
 
 
-**Detailed Explanation on why the output is "mroty":**
-- We start at index `-5`, which is the character `m` in "progra`m`ming" (5th char from the end)
-- We end at index `-15` (exclusive), moving backward
-- The step is `-2`, meaning we move backward by `2` characters each time
-- So we get characters at positions `-5`, `-7`, `-9`, `-11`, `-13`
-- These characters are `m`, `r`, `o`, `t`, `y`
-- The result is "**mroty**"
-
-
 
 ## Common Pitfalls and Tips
 
