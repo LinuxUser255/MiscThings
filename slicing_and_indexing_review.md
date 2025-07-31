@@ -238,14 +238,14 @@ So the output should be "**Ph oai**" (with a space between `h` and `o`).
 
 <br>
 
-### Example 8: Slice the string `Python programming` to get `mroty`
+### Example 8: Slice the string `Python programming` to get `mopron`
 
 
 ### A detailed explaination of the process:
 
 **`string[-5:-15:-2]` on the string "Python programming".**
 
-that index actually results in the text `mropn`, not mroty
+This index  results in the text `mropn`.
 
 
 First, identify the negative indices in "**Python programming**":
