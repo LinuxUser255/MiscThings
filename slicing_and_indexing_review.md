@@ -239,9 +239,14 @@ So the output should be "**Ph oai**" (with a space between `h` and `o`).
 <br>
 
 ### Example 8: Slice the string `Python programming` to get `mroty`
+
+
 ### A detailed explaination of the process:
 
 **`string[-5:-15:-2]` on the string "Python programming".**
+
+that index actually results in the text `mropn`, not mroty
+
 
 First, identify the negative indices in "**Python programming**":
 
@@ -252,24 +257,24 @@ Neg:   -18-17-16-15-14-13-12-11-10-9 -8 -7 -6 -5 -4 -3 -2 -1
 ```
 
 Now, let's trace the slicing operation `string[-5:-15:-2]`:
-- Start at index `-5`, which is the character `m` (the first 'm' in "progra`m`ming")
+- Start at index `-5`, which is the character `m` (the second 'm' in "program`m`ing")
 - End before index `-15`, which is the character `h` in "Pyt`h`on"
 - Step by `-2`, meaning move backward by 2 characters each time
 
-
 **So we get characters at positions:**
-- `-5`: '**m**' (first 'm' in "progra`m`ming")
+- `-5`: '**m**' (second 'm' in "program`m`ing")
 - `-7`: '**r**' (second 'r' in "prog`r`amming")
 - `-9`: '**o**' (in "pr`o`gramming")
-- `-11`: '**t**' (in "Py`t`hon")
-- `-13`: '**y**' (in "P`y`thon")
+- `-11`: '**p**' (in "`p`rogramming")
+- `-13`: '**n**' (in "Pytho`n`")
 
-Result: "**mroty**"
+Result: "**mropn**"
+
 
 
 ```python
 string = "Python programming"
-print(string[-5:-15:-2])
+print(string[-5:-15:-2]) # mropn
 ```
 
 
